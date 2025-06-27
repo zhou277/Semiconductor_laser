@@ -7,3 +7,7 @@
 ### Process
 > Model the process of semiconductor  
 > Model the aperiodic grating
+
+### What I need now?
+- Equation between the current/voltage and laser frequency
+- Equations of the grating about how to tune the frequency of laser
