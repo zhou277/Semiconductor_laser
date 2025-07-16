@@ -9,11 +9,16 @@
 https://dspace.mit.edu/bitstream/handle/1721.1/17012/54455783-MIT.pdf?sequence=2&isAllowed=y
 ![alt text](image-4.png)   
  The code is in the Reappearance.py, please put the QCL_materials.py together to run the script.  
- The result is record as following.  
- ![alt text](image-1.png)  
- Also there are some figures about the structure and flux.  
- ![alt text](image-2.png)
- ![alt text](image-3.png)  
+ >The structure is as following , the red section is the source.  
+ ![alt text](image-2.png)  
+  The result is record as following.  
+ ![alt text](image-1.png)
  It seems the source can not transport through the materials.
 
- ### 7.15
+ ### 7.16
+ > Previous sourcs is setting from the x axis  
+ Try source from direction of y axis with the dot source  
+ The structure is as following, the red dot is a continuous source with frequency of 3THz.  
+ ![alt text](image-5.png)  
+The result is as following.  
+![alt text](image-6.png)
