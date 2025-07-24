@@ -44,3 +44,13 @@ sim plot is as below.
 The result of ez is like this.  
 ![alt text](image-11.png)  
 code is in  QCL_Lab_723.py  
+
+### 7.24
+>Try to reappear the metal-metal waveguide with gold.  
+Set up source as continuous source and will end at 10s.  
+The parameter of material is set as follows, using the drude model.  
+![alt text](image-15.png)
+Result is as follows.    
+![alt text](image-14.png)   
+The frequency of source is set as 5THz.  
+Code is in the Metal-metal_wg_0724.py  
