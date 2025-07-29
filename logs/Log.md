@@ -134,3 +134,12 @@ nplus_GaAs = mp.Medium(
 - Simulation code is in the **MM_wg_modified_0725.py**.
 - You can also see the result in **MM_wg_modified_0725.ipynb**.
 - Introduction of the code is in the **Intro_MM_0725.md**.
+
+### 7.29
+- Try the code **holey-wvg-cavity.py**.  
+- Modify the parameter to sx = 70 and frequency = 1e12, it will output transmission as 0.
+- The structure is using the a periodic sequence.    
+- Figure is showing when sx = 60 and material is using the default material.  
+![alt text](image-16.png)  
+- Tomorrow will try other kinds of materials.
+
