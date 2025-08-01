@@ -97,6 +97,7 @@ sim = mp.Simulation(
     dimensions=2)
 
 # sim.plot2D()
+# the source can be set up as Ex direction 
 for i in range (10,100,10):
     sim.run(until=i)
     ###-------------------------------------------------------------Plot--------------------------------------------------------------------###

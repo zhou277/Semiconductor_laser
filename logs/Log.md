@@ -141,5 +141,14 @@ nplus_GaAs = mp.Medium(
 - The structure is using the a periodic sequence.    
 - Figure is showing when sx = 60 and material is using the default material.  
 ![alt text](image-16.png)  
-- Tomorrow will try other kinds of materials.
+- The materials is using the default config as blk.  
+- Next step will try other kinds of materials.
+
+### 7.31 
+- Cancel the symmetries in simulation lead to no difference.  
+- Try using the material set up by ourselves.  
+- From the config in the official code **holey-wvg-cavity.py**, I find that the source component should be set up as Ex direction.  
+- So that I run the **MM_wg_modified_0725.py** again with new source and the result is below.  
+![alt text](image-18.png)
+- Compare to the result before, the edge of the material change point is more sharp but there is no decay in the middle of the curve.  
 
