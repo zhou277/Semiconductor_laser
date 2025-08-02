@@ -1,8 +1,7 @@
 # Research on aperiodic lattice laser 
 ## logs
-
 ---
-### 7.14  
+### 7.14
 - Define the materials in the QCL_Materials.py.  
 - The parameters are given by the Chat, based on the Drude model.  
 - Try to make the reappearance of 4.5.1 Plasmon waveguide in   
@@ -15,7 +14,7 @@ https://dspace.mit.edu/bitstream/handle/1721.1/17012/54455783-MIT.pdf?sequence=2
  ![alt text](image-1.png)
 - It seems the source can not transport through the materials.
 ---
- ### 7.16
+### 7.16
 - Previous sourcs is setting from the x axis  
 - Try source from direction of y axis with the dot source  
 - The structure is as following, the red dot is a continuous source with frequency of 3THz.  
@@ -43,7 +42,7 @@ https://dspace.mit.edu/bitstream/handle/1721.1/17012/54455783-MIT.pdf?sequence=2
 - The result of ez is like this.  
 ![alt text](image-11.png)  
 - code is in  QCL_Lab_723.py  
-
+---
 ### 7.24
 - Try to reappear the metal-metal waveguide with gold.  
 - Set up source as continuous source and will end at 10s.  
@@ -79,15 +78,13 @@ nplus_GaAs = mp.Medium(
             frequency=0.1967,   # Plasma resonant frequency
             gamma=0.0333,       # damping constant
             sigma=1.0           # conductivity
-        )
-    ]
-)
+        )])
 ~~~
 - Result is as follows.    
 ![alt text](image-14.png)   
 - The frequency of source is set as 5THz.  
 - Code is in the **Metal-metal_wg_0724.py**.  
-
+---
 ### 7.25
 - Recalculate the parameter of drude model for there is something wrong in the previous version.
 - Code is in the **calculate_drude.py**.
@@ -134,21 +131,34 @@ nplus_GaAs = mp.Medium(
 - Simulation code is in the **MM_wg_modified_0725.py**.
 - You can also see the result in **MM_wg_modified_0725.ipynb**.
 - Introduction of the code is in the **Intro_MM_0725.md**.
-
+---
 ### 7.29
 - Try the code **holey-wvg-cavity.py**.  
 - Modify the parameter to sx = 70 and frequency = 1e12, it will output transmission as 0.
 - The structure is using the a periodic sequence.    
-- Figure is showing when sx = 60 and material is using the default material.  
+- Figure is showing when sx = 60 and material is using the default material(epislon = 13).  
 ![alt text](image-16.png)  
 - The materials is using the default config as blk.  
 - Next step will try other kinds of materials.
-
-### 7.31 
+---
+### 7.31
 - Cancel the symmetries in simulation lead to no difference.  
 - Try using the material set up by ourselves.  
 - From the config in the official code **holey-wvg-cavity.py**, I find that the source component should be set up as Ex direction.  
 - So that I run the **MM_wg_modified_0725.py** again with new source and the result is below.  
 ![alt text](image-18.png)
 - Compare to the result before, the edge of the material change point is more sharp but there is no decay in the middle of the curve.  
+- Try to stimulate the source from 3 directions, and the result of 10 is like below.  
+![alt text](image-20.png) ![alt text](image-21.png)![alt text](image-22.png)
+---
+### 8.01
+- Try the waveguide without any holes and material epislon is 13, flux is plot in the figure below.  
+![alt text](image-26.png)![alt text](image-19.png)
+- The result with air is almost the same.  
+![alt text](image-31.png)![alt text](image-32.png)
 
+- As to the mode intensity, the material epislon is 13 and result is like the figure below.  
+![alt text](image-23.png)![alt text](image-24.png)![alt text](image-25.png)
+- The result with air is almost the same.  
+![alt text](image-27.png)![alt text](image-28.png)![alt text](image-29.png)![alt text](image-30.png)
+---
