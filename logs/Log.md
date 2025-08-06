@@ -159,6 +159,7 @@ nplus_GaAs = mp.Medium(
 
 - As to the mode intensity, the material epislon is 13 and result is like the figure below.  
 ![alt text](image-33.png)![alt text](image-34.png)![alt text](image-35.png)
-- The result with air is almost the same.  
+
+- The result with air（epsilon = 1） is almost the same.  
 ![alt text](image-27.png)![alt text](image-28.png)![alt text](image-29.png)![alt text](image-30.png)
 ---
