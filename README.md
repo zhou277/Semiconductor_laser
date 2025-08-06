@@ -1,6 +1,5 @@
-# Research on perturbation suppression of non-periodic lattice laser based on LQR control
-
-## Jiaxin Zhou 's reserach on semiconductor laser and LQR control
+# Research on Meep 's application in semiconductor laser
+## Jiaxin Zhou 's reserach on semiconductor laser 
 
 
 - using meep as the model tools
