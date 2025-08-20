@@ -31,7 +31,7 @@ def drude_medium(N_cm3, tau_ps, m_eff_ratio, eps_inf)-> mp.Medium:
                                                                 sigma=omega_p2_meep
                                    )])
 
-Au_fun         = drude_medium(N_cm3=5.6e22, tau_ps=0.05, m_eff_ratio=1.0,   eps_inf=1.0 )
+Au_fun         = drude_medium(N_cm3=5.6e22, tau_ps=0.05,  m_eff_ratio=0.067,  eps_inf=1.0 )
 GaAs_5e18_fun  = drude_medium(N_cm3=5.0e18, tau_ps=0.1,  m_eff_ratio=0.067, eps_inf=12.9)
 GaAs_5e15_fun  = drude_medium(N_cm3=5.0e15, tau_ps=1.0,  m_eff_ratio=0.067, eps_inf=12.9)
 GaAs_1e18_fun  = drude_medium(N_cm3=1.0e18, tau_ps=0.1,  m_eff_ratio=0.067, eps_inf=12.9)
